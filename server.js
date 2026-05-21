@@ -6,7 +6,7 @@ app.use(express.json());
 
 // ─── CREDENCIALES ────────────────────────────────────────────────────────────
 const VERIFY_TOKEN     = 'flighthub_secret_2024';
-const WA_TOKEN = 'EAANJ2Vz83mwBRp3LGy3V4kCLpTvoMclI8mQZBeI6vf93RJxLB7hBLCQ4tf6JgmzGZCZAed1Wuu9NU0FAbjqfMCDZAz6jlMxs37aUe2ykS1Tm8qyHgrvSWXfGu8hQNjEUBVYx7GuqcE6osi1GsGKsZCQbgOsiNEyx3VxAw2VcbAz9ZCvzjY3tiiddFZCspW5ZCezwQQDzCfgqlhtHP7Rp3ZCZCJueK9XmOZCK6moLm0AdybL8rGGHZB3P1G9afdHCqIOd3sdFrZBiMwHXZAd8H5ZCZCiDLq2uUfZBzOVkE2f15FZBUErKYZD';
+const WA_TOKEN = process.env.WA_TOKEN;
 const PHONE_NUMBER_ID  = '996990110173071';
 const FH2_TOKEN        = 'eyJhbGciOiJIUzUxMiIsImNyaXQiOlsidHlwIiwiYWxnIiwia2lkIl0sImtpZCI6IjBkNzQyMzFmLTgxOWYtNDE3NS04NWUzLTRhZDQxODUzMzEyZiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50Ijoiam9zZWx1aXNnQGNpZWxpdG9kcm9uZS5jb20iLCJleHAiOjIwNzI1NjExOTQsIm5iZiI6MTc1NzAyODM5NCwib3JnYW5pemF0aW9uX3V1aWQiOiIxY2U4Nzg4Zi1hODE3LTQ0YjEtOWFjMy1kNzIwZTgwZTg5YzQiLCJwcm9qZWN0X3V1aWQiOiIiLCJzdWIiOiJmaDIiLCJ1c2VyX2lkIjoiMTQ2NzkxNzcwODYzMTY1ODQ5NiJ9.mdl4SzFoWWDiaTJS19IQo_3izeFRNn_6Rqj0bEpdxJwd4BhkLn1bQGIyIhkF_ydUsvpOc5IN8oLgBddXknyaEA';
 const FH2_BASE_URL     = 'https://es-flight-api-cn.djigate.com';
