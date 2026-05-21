@@ -1,4 +1,4 @@
-const express = require('express');
+﻿const express = require('express');
 const axios   = require('axios');
 const { v4: uuidv4 } = require('uuid');
 const app = express();
@@ -213,4 +213,9 @@ async function enviarWA(numero, texto) {
 }
 
 const PORT = process.env.PORT || 3000;
+setInterval(() => {
+  axios.get('https://whayfly.onrender.com/ping').catch(() => {});
+}, 10 * 60 * 1000);
+
+app.get('/ping', (req, res) => res.send('ok'));
 app.listen(PORT, () => console.log(`🚀 Bot FlightHub 2 activo en puerto ${PORT}`));
